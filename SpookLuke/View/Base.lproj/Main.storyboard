@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ma6-ne-GV6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LemonMilkBold-gx2B3.otf">
+            <string>LEMONMILK-Bold</string>
+        </array>
+        <array key="LemonMilkMedium-mLZYV.otf">
+            <string>LEMONMILK-Medium</string>
+        </array>
+        <array key="LemonMilkRegular-X3XE2.otf">
+            <string>LEMONMILK-Regular</string>
+        </array>
+        <array key="Marsnev - LEMON MILK Pro UltraLight.otf">
+            <string>LEMONMILKPro-UltraLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Name View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="NameVC" interfaceStyle="dark" id="BYZ-38-t0r" customClass="NameViewController" customModule="SpookLuke" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CdW-2D-x3c">
+                                <rect key="frame" x="31.5" y="144" width="351" height="168"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Bdc-jB-keg">
+                                        <rect key="frame" x="0.0" y="0.0" width="351" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="U2i-jb-v8v"/>
+                                            <constraint firstAttribute="width" constant="351" id="cTp-td-h0l"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GCR TRAINING APP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gi-hq-GZZ">
+                                        <rect key="frame" x="36" y="133" width="279" height="35"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Medium" family="LEMON MILK" pointSize="30"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9hE-0a-lK9" userLabel="All Stack View">
+                                <rect key="frame" x="57" y="372" width="300" height="97.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cnm-fF-2Xw" userLabel="Name Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="97.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3o-ow-SzJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="LEMONMILK-Regular" family="LEMON MILK" pointSize="20"/>
+                                                <color key="textColor" name="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBM-mW-1T4">
+                                                <rect key="frame" x="0.0" y="33.5" width="300" height="40"/>
+                                                <color key="backgroundColor" name="textFieldColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Pa3-TG-UaF"/>
+                                                    <constraint firstAttribute="height" constant="40" id="bYy-iG-Zur"/>
+                                                </constraints>
+                                                <color key="textColor" name="textColor"/>
+                                                <fontDescription key="fontDescription" name="LEMONMILKPro-UltraLight" family="LEMON MILK Pro" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" textContentType="name"/>
+                                                <connections>
+                                                    <action selector="textFieldContinuePressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="uok-Qb-Vbc"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter something." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2M-zT-pxY">
+                                                <rect key="frame" x="0.0" y="83.5" width="300" height="14"/>
+                                                <fontDescription key="fontDescription" name="LEMONMILK-Regular" family="LEMON MILK" pointSize="12"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="nameBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CdW-2D-x3c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0Xo-0X-08e"/>
+                            <constraint firstItem="CdW-2D-x3c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P8F-Dc-UZt"/>
+                            <constraint firstItem="9hE-0a-lK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sS8-sR-2kh"/>
+                            <constraint firstItem="9hE-0a-lK9" firstAttribute="top" secondItem="CdW-2D-x3c" secondAttribute="bottom" constant="60" id="tU7-Ru-x0N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="duQ-Hd-Kdt"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="aBM-mW-1T4" id="Rzb-MZ-9hh"/>
+                        <outlet property="pleaseEnterText" destination="L2M-zT-pxY" id="ZnQ-W0-UlG"/>
+                        <segue destination="ma6-ne-GV6" kind="presentation" identifier="nameToHome" modalPresentationStyle="fullScreen" id="MZ5-Zs-qkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.91304347826087" y="105.80357142857143"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="woT-vh-AEU">
+            <objects>
+                <viewController interfaceStyle="dark" id="Kqr-IB-ZFX" customClass="AccountViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uKJ-br-Fyy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUx-t9-2f5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="barTintColor" name="backgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                    <color key="textColor" name="textColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Account" id="ubC-j6-1dv">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="2Js-uZ-Cyp">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="Kqr-IB-ZFX" id="hcW-Ch-Qq6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dSS-ow-Scg">
+                                <rect key="frame" x="50" y="283" width="314" height="330"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-kU-cru">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="nDs-yD-Hac"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Change Name">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeNameButtonPressed:" destination="Kqr-IB-ZFX" eventType="touchUpInside" id="eQC-Bj-IHf"/>
+                                            <action selector="changeNamePressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="XSg-cx-FA5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvE-Rn-ueN">
+                                        <rect key="frame" x="0.0" y="90" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="gE3-Vj-QNb"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="rbo-ga-kB0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Reset Progress">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="FYq-5k-h7F"/>
+                                            <action selector="resetProgressButtonPressed:" destination="Kqr-IB-ZFX" eventType="touchUpInside" id="Wog-nG-fgx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsA-gA-hVB">
+                                        <rect key="frame" x="0.0" y="180" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="QLl-gk-Rgq"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="eBs-x8-wWJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Reset Data">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetDataButtonPressed:" destination="Kqr-IB-ZFX" eventType="touchUpInside" id="tbY-s2-wMc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkK-ot-eme">
+                                        <rect key="frame" x="0.0" y="270" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="mex-3k-XBE"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="nXM-Ym-1rM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Reset All">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetAllButtonPrssed:" destination="Kqr-IB-ZFX" eventType="touchUpInside" id="Awl-MO-TiX"/>
+                                            <action selector="resetPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="8r4-pX-KQr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="abX-zj-c61"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dSS-ow-Scg" firstAttribute="centerY" secondItem="uKJ-br-Fyy" secondAttribute="centerY" id="kgd-4g-9QU"/>
+                            <constraint firstItem="dSS-ow-Scg" firstAttribute="leading" secondItem="abX-zj-c61" secondAttribute="leading" constant="50" id="lGU-5T-7lb"/>
+                            <constraint firstItem="abX-zj-c61" firstAttribute="trailing" secondItem="dSS-ow-Scg" secondAttribute="trailing" constant="50" id="rHl-Gw-uT2"/>
+                            <constraint firstItem="dSS-ow-Scg" firstAttribute="centerX" secondItem="uKJ-br-Fyy" secondAttribute="centerX" id="yzJ-Pw-BCH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeNameButton" destination="xjq-kU-cru" id="3tS-ZD-MnG"/>
+                        <outlet property="resetAllButton" destination="IkK-ot-eme" id="NvM-Bz-caM"/>
+                        <outlet property="resetDataButton" destination="PsA-gA-hVB" id="l6l-hX-zsv"/>
+                        <outlet property="resetProgressButton" destination="zvE-Rn-ueN" id="jQd-EZ-AjT"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="settingsToName" modalPresentationStyle="fullScreen" id="87q-zj-C8v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltv-ZP-6Yg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="-621"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="i3c-88-959">
+            <objects>
+                <viewController interfaceStyle="dark" id="uJI-0A-Kn9" customClass="SettingsViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbo-z4-hNj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF8-Gw-nn6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" name="backgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" name="backgroundColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Settings" id="EA1-TS-Luv"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XeE-GW-p6D">
+                                <rect key="frame" x="50" y="328" width="314" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0G-dM-djv">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="D4w-YD-9c0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Info">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="infoButtonPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="hVw-AN-93z"/>
+                                            <segue destination="qyL-l6-E20" kind="presentation" identifier="settingsToInfo" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ACm-PA-Jgf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjl-Rf-8yh">
+                                        <rect key="frame" x="0.0" y="90" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="YVw-tx-haC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="z4S-aB-UAQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Account">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Kqr-IB-ZFX" kind="presentation" identifier="settingsToAccount" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="yxA-pM-0FT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7Z-9Z-FdW">
+                                        <rect key="frame" x="0.0" y="180" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="K3I-Ch-bxW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Help">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="helpButtonPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="CXG-pN-cq1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jsW-oH-1cO"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DF8-Gw-nn6" firstAttribute="top" secondItem="jsW-oH-1cO" secondAttribute="top" id="62g-TI-TiA"/>
+                            <constraint firstItem="XeE-GW-p6D" firstAttribute="centerX" secondItem="bbo-z4-hNj" secondAttribute="centerX" id="6rQ-J6-F8C"/>
+                            <constraint firstItem="jsW-oH-1cO" firstAttribute="trailing" secondItem="XeE-GW-p6D" secondAttribute="trailing" constant="50" id="EhR-Ae-0rN"/>
+                            <constraint firstItem="XeE-GW-p6D" firstAttribute="centerY" secondItem="bbo-z4-hNj" secondAttribute="centerY" id="dPa-IF-zJn"/>
+                            <constraint firstItem="XeE-GW-p6D" firstAttribute="leading" secondItem="jsW-oH-1cO" secondAttribute="leading" constant="50" id="fLt-tn-eOe"/>
+                            <constraint firstItem="DF8-Gw-nn6" firstAttribute="leading" secondItem="jsW-oH-1cO" secondAttribute="leading" id="wIo-Hd-vyg"/>
+                            <constraint firstItem="DF8-Gw-nn6" firstAttribute="trailing" secondItem="jsW-oH-1cO" secondAttribute="trailing" id="wXi-De-f7P"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="tGD-ZL-6Pj"/>
+                    <connections>
+                        <outlet property="accountButton" destination="zjl-Rf-8yh" id="6tF-21-fDv"/>
+                        <outlet property="helpButton" destination="K7Z-9Z-FdW" id="gfo-4j-7jI"/>
+                        <outlet property="infoButton" destination="G0G-dM-djv" id="0St-tG-q5j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R48-tW-uB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="-621"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="k4n-ov-whq">
+            <objects>
+                <viewController interfaceStyle="dark" id="qyL-l6-E20" customClass="InfoViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oL6-Jy-Rc2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAf-l0-Rz2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="barTintColor" name="backgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                    <color key="textColor" name="textColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Info" id="Yn8-C8-CvZ">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="nhm-8E-R8h">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="qyL-l6-E20" id="alN-HB-3jl"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="uA8-On-CxL">
+                                <rect key="frame" x="50" y="283" width="314" height="330"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuA-4S-Kbv">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="rfO-Gg-6aj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Membership Website">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="membershipButtonPressed:" destination="qyL-l6-E20" eventType="touchUpInside" id="ZEl-is-hwY"/>
+                                            <action selector="websiteButtonPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="wmf-2Y-Vc4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrB-Cu-pxK">
+                                        <rect key="frame" x="0.0" y="90" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0ro-oe-oNO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="YouTube Channel">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="youTubeButtonPressed:" destination="qyL-l6-E20" eventType="touchUpInside" id="0T1-NO-n1y"/>
+                                            <action selector="youtubeButtonPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="ytH-qx-hTR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAw-Tt-K6V">
+                                        <rect key="frame" x="0.0" y="180" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="LO0-Bb-ohH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Book Support With Dreamy">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dreamyButtonPressed:" destination="qyL-l6-E20" eventType="touchUpInside" id="3Ex-Bz-5mF"/>
+                                            <action selector="dreamyButtonPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="PDG-lL-PLq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6R-Lc-akS">
+                                        <rect key="frame" x="0.0" y="270" width="314" height="60"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="3Fn-Qe-UU8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                        <state key="normal" title="Book Coaching With Curtis">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="curtisButtonPressed:" destination="uJI-0A-Kn9" eventType="touchUpInside" id="NUe-v0-t2g"/>
+                                            <action selector="curtisButtonPressed:" destination="qyL-l6-E20" eventType="touchUpInside" id="qDv-1E-vHI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PeA-Sk-SsR"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uA8-On-CxL" firstAttribute="centerY" secondItem="oL6-Jy-Rc2" secondAttribute="centerY" id="HRj-hA-hZV"/>
+                            <constraint firstItem="PeA-Sk-SsR" firstAttribute="trailing" secondItem="uA8-On-CxL" secondAttribute="trailing" constant="50" id="blk-rs-Jr9"/>
+                            <constraint firstItem="uA8-On-CxL" firstAttribute="centerX" secondItem="oL6-Jy-Rc2" secondAttribute="centerX" id="gGF-x5-7TT"/>
+                            <constraint firstItem="uA8-On-CxL" firstAttribute="leading" secondItem="PeA-Sk-SsR" secondAttribute="leading" constant="50" id="wIe-4K-9Sz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="curtisButton" destination="h6R-Lc-akS" id="W99-yq-fvO"/>
+                        <outlet property="dreamyButton" destination="kAw-Tt-K6V" id="BcP-zK-LHy"/>
+                        <outlet property="membershipButton" destination="RuA-4S-Kbv" id="ST3-o3-IhO"/>
+                        <outlet property="youTubeButton" destination="QrB-Cu-pxK" id="0rU-FC-diL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dG7-Ib-vwL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2638" y="-621"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="xQf-M6-VQ5">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" interfaceStyle="dark" id="PIN-pk-gGl" customClass="HomeViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pUJ-pc-dey">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Fq-Bj-ULd" userLabel="TopLabels">
+                                <rect key="frame" x="20" y="120" width="374" height="176"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-4" translatesAutoresizingMaskIntoConstraints="NO" id="yuK-0c-7Y4" userLabel="WelcomeStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="77"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="byw-aF-IPk">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="mKr-tP-eDv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-Vn-FL1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="25"/>
+                                                                <fontDescription key="fontDescription" name="LEMONMILKPro-UltraLight" family="LEMON MILK Pro" pointSize="25"/>
+                                                                <color key="textColor" name="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-ms-uOf">
+                                                                <rect key="frame" x="219" y="0.0" width="155" height="25"/>
+                                                                <color key="backgroundColor" name="spookRoyalBlue"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="25" id="JFa-d8-0Un"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <state key="normal" title="Rest Day">
+                                                                    <color key="titleColor" name="spookWhite"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="restDayButtonPressed:" destination="PIN-pk-gGl" eventType="touchUpInside" id="i4A-Cf-Aoz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jr-9z-YbN">
+                                                <rect key="frame" x="0.0" y="21" width="374" height="56"/>
+                                                <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="48"/>
+                                                <color key="textColor" name="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="bgB-I3-QLf" userLabel="Laebls">
+                                        <rect key="frame" x="0.0" y="87" width="374" height="89"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="2W8-wg-rjl" userLabel="Days">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="89"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days Completed In Phase:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yw-ZG-MhS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="202.5" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="rQh-Tn-BXb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="LEMONMILKPro-UltraLight" family="LEMON MILK Pro" pointSize="17"/>
+                                                        <color key="textColor" name="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGM-Ef-Ybo">
+                                                        <rect key="frame" x="0.0" y="22" width="29" height="61"/>
+                                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="52"/>
+                                                        <color key="textColor" name="phase1"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GAk-dC-9oi">
+                                                        <rect key="frame" x="0.0" y="85" width="374" height="4"/>
+                                                    </progressView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="GAk-dC-9oi" secondAttribute="trailing" id="69y-fR-6RF"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="2W8-wg-rjl" secondAttribute="trailing" id="ADH-j7-J6Y"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="z4Z-O5-DUw">
+                                <rect key="frame" x="12" y="347" width="390" height="29"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="id0-12-NgE">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="29"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps Completed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbh-yG-ebc">
+                                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="LEMONMILKPro-UltraLight" family="LEMON MILK Pro" pointSize="14"/>
+                                                <color key="textColor" name="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0 out of 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SM-Hh-XyP">
+                                                <rect key="frame" x="118.5" y="0.0" width="68.5" height="29"/>
+                                                <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                                <color key="textColor" name="phase1"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69e-BW-XNr">
+                                        <rect key="frame" x="202" y="0.0" width="188" height="29"/>
+                                        <color key="backgroundColor" name="spookRoyalBlue"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="  Mark Finished  ">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="refreshTapped:" destination="PIN-pk-gGl" eventType="touchUpInside" id="2up-om-aOB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xwe-jp-4rs">
+                                <rect key="frame" x="0.0" y="386" width="414" height="510"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="sectionIndexColor" name="spookBlack"/>
+                                <color key="sectionIndexBackgroundColor" name="nameBackgroundColor"/>
+                                <color key="sectionIndexTrackingBackgroundColor" name="backgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PIN-pk-gGl" id="U4a-UX-T6b"/>
+                                    <outlet property="delegate" destination="PIN-pk-gGl" id="ZPX-1f-iJg"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S7B-0j-tKl">
+                                <rect key="frame" x="10" y="306" width="394" height="32"/>
+                                <segments>
+                                    <segment title="Ground Day"/>
+                                    <segment title="Air Day"/>
+                                </segments>
+                                <connections>
+                                    <action selector="daySegmentChanged:" destination="PIN-pk-gGl" eventType="valueChanged" id="Ihx-oW-WGG"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="9U5-va-UU2">
+                                <rect key="frame" x="10" y="64" width="394" height="32"/>
+                                <segments>
+                                    <segment title="Phase 1"/>
+                                    <segment title="Phase 2"/>
+                                    <segment title="Phase 3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="phaseSegmentChanged:" destination="PIN-pk-gGl" eventType="valueChanged" id="O4Q-b3-wcg"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LZ6-RP-LUw"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LZ6-RP-LUw" firstAttribute="trailing" secondItem="9U5-va-UU2" secondAttribute="trailing" constant="10" id="7Vb-OP-EGG"/>
+                            <constraint firstItem="xwe-jp-4rs" firstAttribute="trailing" secondItem="LZ6-RP-LUw" secondAttribute="trailing" id="8I0-Gj-gpz"/>
+                            <constraint firstItem="2Fq-Bj-ULd" firstAttribute="top" secondItem="9U5-va-UU2" secondAttribute="bottom" constant="25" id="BCl-JC-TI7"/>
+                            <constraint firstItem="z4Z-O5-DUw" firstAttribute="leading" secondItem="LZ6-RP-LUw" secondAttribute="leading" constant="12" id="BrA-cc-vJG"/>
+                            <constraint firstItem="xwe-jp-4rs" firstAttribute="top" secondItem="z4Z-O5-DUw" secondAttribute="bottom" constant="10" id="EaR-P9-bza"/>
+                            <constraint firstItem="z4Z-O5-DUw" firstAttribute="top" secondItem="S7B-0j-tKl" secondAttribute="bottom" constant="10" id="LJJ-zh-R1K"/>
+                            <constraint firstItem="9U5-va-UU2" firstAttribute="leading" secondItem="LZ6-RP-LUw" secondAttribute="leading" constant="10" id="M0m-KP-x96"/>
+                            <constraint firstItem="2Fq-Bj-ULd" firstAttribute="leading" secondItem="LZ6-RP-LUw" secondAttribute="leading" constant="20" id="R7S-Fp-Xdl"/>
+                            <constraint firstItem="9U5-va-UU2" firstAttribute="top" secondItem="LZ6-RP-LUw" secondAttribute="top" constant="20" id="Smj-A9-xgE"/>
+                            <constraint firstItem="LZ6-RP-LUw" firstAttribute="trailing" secondItem="z4Z-O5-DUw" secondAttribute="trailing" constant="12" id="UjJ-fw-tqq"/>
+                            <constraint firstItem="LZ6-RP-LUw" firstAttribute="trailing" secondItem="2Fq-Bj-ULd" secondAttribute="trailing" constant="20" id="WDg-BB-xPh"/>
+                            <constraint firstAttribute="bottom" secondItem="xwe-jp-4rs" secondAttribute="bottom" id="bd5-UC-vl7"/>
+                            <constraint firstItem="S7B-0j-tKl" firstAttribute="leading" secondItem="LZ6-RP-LUw" secondAttribute="leading" constant="10" id="gO4-lT-RXb"/>
+                            <constraint firstItem="S7B-0j-tKl" firstAttribute="top" secondItem="2Fq-Bj-ULd" secondAttribute="bottom" constant="10" id="gsx-QF-C6S"/>
+                            <constraint firstItem="xwe-jp-4rs" firstAttribute="leading" secondItem="LZ6-RP-LUw" secondAttribute="leading" id="ity-uD-wpr"/>
+                            <constraint firstItem="LZ6-RP-LUw" firstAttribute="trailing" secondItem="S7B-0j-tKl" secondAttribute="trailing" constant="10" id="ubf-KP-i8z"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="P8G-nf-rtS"/>
+                    <navigationItem key="navigationItem" id="wIa-wQ-D5g"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="completionLabel" destination="1SM-Hh-XyP" id="kS2-nI-GFE"/>
+                        <outlet property="daysCompletionLabel" destination="eGM-Ef-Ybo" id="fTe-dK-oRB"/>
+                        <outlet property="finishDayButton" destination="69e-BW-XNr" id="ZlO-Ed-zMb"/>
+                        <outlet property="groundAirSegment" destination="S7B-0j-tKl" id="Wjo-iR-bLp"/>
+                        <outlet property="nameLabel" destination="3jr-9z-YbN" id="8xx-VD-fa2"/>
+                        <outlet property="phasesSegment" destination="9U5-va-UU2" id="PVn-g2-Xaf"/>
+                        <outlet property="progressView" destination="GAk-dC-9oi" id="9bT-YM-Dbd"/>
+                        <outlet property="restDayButton" destination="hiP-ms-uOf" id="ixo-Ob-v7r"/>
+                        <outlet property="taskTableView" destination="xwe-jp-4rs" id="bKi-wm-IRc"/>
+                        <segue destination="cax-os-8lf" kind="presentation" identifier="homeToTaskDetails" modalTransitionStyle="coverVertical" id="6pq-LX-CMO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WHM-Fg-ZCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811.594202898551" y="105.80357142857143"/>
+        </scene>
+        <!--Task Management View Contoller-->
+        <scene sceneID="GK2-QF-Fdv">
+            <objects>
+                <viewController interfaceStyle="dark" id="cax-os-8lf" customClass="TaskManagementViewContoller" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tja-tl-bFa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNd-15-1AU">
+                                <rect key="frame" x="82" y="566" width="250" height="50"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="0dd-ev-OAC"/>
+                                    <constraint firstAttribute="height" constant="50" id="sGB-r4-YxF"/>
+                                </constraints>
+                                <state key="normal" title="Complete">
+                                    <color key="titleColor" name="spookWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="completeButtonPressed:" destination="cax-os-8lf" eventType="touchUpInside" id="54R-XR-33R"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="62" translatesAutoresizingMaskIntoConstraints="NO" id="Ql6-AL-z7t">
+                                <rect key="frame" x="44.5" y="70" width="325" height="246"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdD-8Z-dkh">
+                                        <rect key="frame" x="100.5" y="0.0" width="124" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Regular" family="LEMON MILK" pointSize="25"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6p-Cz-KqO">
+                                        <rect key="frame" x="106" y="91.5" width="113" height="52.5"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILKPro-UltraLight" family="LEMON MILK Pro" pointSize="45"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="I0f-7i-beV">
+                                        <rect key="frame" x="0.0" y="206" width="325" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFB-VG-D3M">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="40"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="449-ip-De2"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="CIq-6d-wct"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Start">
+                                                    <color key="titleColor" name="spookWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="startButtonPressed:" destination="cax-os-8lf" eventType="touchUpInside" id="mHf-Dh-jgE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhL-4R-IZQ">
+                                                <rect key="frame" x="120" y="0.0" width="85" height="40"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="WpZ-Pr-ae1"/>
+                                                </constraints>
+                                                <state key="normal" title="Pause">
+                                                    <color key="titleColor" name="spookWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="pauseButtonPressed:" destination="cax-os-8lf" eventType="touchUpInside" id="V7O-4f-T9L"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2L-s0-RC3">
+                                                <rect key="frame" x="240" y="0.0" width="85" height="40"/>
+                                                <color key="backgroundColor" systemColor="linkColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="FAo-tR-7TJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" name="spookWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetButtonPressed:" destination="cax-os-8lf" eventType="touchUpInside" id="qrh-RX-sbd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YFx-EW-NWh"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cNd-15-1AU" firstAttribute="centerX" secondItem="Tja-tl-bFa" secondAttribute="centerX" id="L7Y-5z-ouW"/>
+                            <constraint firstItem="cNd-15-1AU" firstAttribute="top" secondItem="Ql6-AL-z7t" secondAttribute="bottom" constant="250" id="Z5B-7S-Yea"/>
+                            <constraint firstItem="Ql6-AL-z7t" firstAttribute="centerX" secondItem="Tja-tl-bFa" secondAttribute="centerX" id="srz-Ce-CcD"/>
+                            <constraint firstItem="Ql6-AL-z7t" firstAttribute="top" secondItem="YFx-EW-NWh" secondAttribute="top" constant="70" id="tHW-r8-8ef"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JRz-hl-d7q"/>
+                    <connections>
+                        <outlet property="completeButton" destination="cNd-15-1AU" id="Yp0-yE-i0u"/>
+                        <outlet property="pauseButton" destination="hhL-4R-IZQ" id="rHp-5a-XHd"/>
+                        <outlet property="resetButton" destination="n2L-s0-RC3" id="p2v-du-f7K"/>
+                        <outlet property="startButton" destination="CFB-VG-D3M" id="v16-Uc-DLq"/>
+                        <outlet property="taskNameLabel" destination="EdD-8Z-dkh" id="Oj7-Jg-Ju7"/>
+                        <outlet property="timerLabel" destination="I6p-Cz-KqO" id="rbK-Z8-q4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSv-HR-B3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2705.7971014492755" y="105.80357142857143"/>
+        </scene>
+        <!--Entry View Controller-->
+        <scene sceneID="pXd-RK-C0M">
+            <objects>
+                <viewController storyboardIdentifier="new" interfaceStyle="dark" id="iit-Bd-Bgt" customClass="EntryViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e46-ry-Ebm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="ZcJ-za-bW2">
+                                <rect key="frame" x="15" y="66" width="384" height="742"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="textColor" name="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="light" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4F-d8-u3z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="barTintColor" name="backgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="20"/>
+                                    <color key="textColor" name="textColor"/>
+                                    <color key="textShadowColor" name="textColor"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" name="textColor"/>
+                                    <color key="textShadowColor" name="textColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="New Note" id="huI-dx-Nie">
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="lsD-Od-Tk8">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="saveButtonPressed:" destination="iit-Bd-Bgt" id="9bR-n4-Cvj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nKT-am-YYk"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZcJ-za-bW2" firstAttribute="top" secondItem="r4F-d8-u3z" secondAttribute="bottom" constant="10" id="0Kz-eb-POh"/>
+                            <constraint firstItem="ZcJ-za-bW2" firstAttribute="leading" secondItem="nKT-am-YYk" secondAttribute="leading" constant="15" id="1dz-mc-bhJ"/>
+                            <constraint firstItem="r4F-d8-u3z" firstAttribute="trailing" secondItem="nKT-am-YYk" secondAttribute="trailing" id="1mo-o4-6nB"/>
+                            <constraint firstItem="nKT-am-YYk" firstAttribute="bottom" secondItem="ZcJ-za-bW2" secondAttribute="bottom" id="21G-8D-Lde"/>
+                            <constraint firstItem="nKT-am-YYk" firstAttribute="trailing" secondItem="ZcJ-za-bW2" secondAttribute="trailing" constant="15" id="5Ea-uN-wOE"/>
+                            <constraint firstItem="r4F-d8-u3z" firstAttribute="top" secondItem="nKT-am-YYk" secondAttribute="top" id="6nD-YU-z6P"/>
+                            <constraint firstItem="r4F-d8-u3z" firstAttribute="leading" secondItem="nKT-am-YYk" secondAttribute="leading" id="ih8-Jx-O75"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="r4F-d8-u3z" id="8p3-9g-UNd"/>
+                        <outlet property="noteField" destination="ZcJ-za-bW2" id="sNH-pH-Lao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7D-kh-eqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2705.7971014492755" y="1581.6964285714284"/>
+        </scene>
+        <!--Update Entry View Controller-->
+        <scene sceneID="O9C-2S-uKl">
+            <objects>
+                <viewController interfaceStyle="dark" id="4AC-Lt-XNO" customClass="UpdateEntryViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aNL-Fh-pMy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="di3-cq-Wlz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <color key="backgroundColor" name="spookWhite"/>
+                                <color key="barTintColor" name="nameBackgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="20"/>
+                                    <color key="textColor" name="textColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Update Note" id="RvB-v1-vZp">
+                                        <barButtonItem key="rightBarButtonItem" title="Update" id="PHN-EM-zzh">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="updateButtonPressed:" destination="4AC-Lt-XNO" id="37k-tL-LIn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="oos-gv-W2t">
+                                <rect key="frame" x="15" y="66" width="384" height="742"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="textColor" name="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yNK-Hm-6fw"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="di3-cq-Wlz" firstAttribute="leading" secondItem="yNK-Hm-6fw" secondAttribute="leading" id="4Fe-f1-Kqr"/>
+                            <constraint firstItem="oos-gv-W2t" firstAttribute="top" secondItem="di3-cq-Wlz" secondAttribute="bottom" constant="10" id="58U-Dn-Eov"/>
+                            <constraint firstItem="di3-cq-Wlz" firstAttribute="trailing" secondItem="yNK-Hm-6fw" secondAttribute="trailing" id="IUC-DX-D8G"/>
+                            <constraint firstItem="di3-cq-Wlz" firstAttribute="top" secondItem="yNK-Hm-6fw" secondAttribute="top" id="JBY-3X-Gyh"/>
+                            <constraint firstItem="yNK-Hm-6fw" firstAttribute="trailing" secondItem="oos-gv-W2t" secondAttribute="trailing" constant="15" id="KCA-wD-y1U"/>
+                            <constraint firstItem="oos-gv-W2t" firstAttribute="leading" secondItem="yNK-Hm-6fw" secondAttribute="leading" constant="15" id="hRY-BT-Slq"/>
+                            <constraint firstItem="yNK-Hm-6fw" firstAttribute="bottom" secondItem="oos-gv-W2t" secondAttribute="bottom" id="pVQ-Gn-kv4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noteField" destination="oos-gv-W2t" id="Eeq-dj-Ns0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N6K-BZ-Wd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="1582"/>
+        </scene>
+        <!--Data-->
+        <scene sceneID="dgo-nE-Y6e">
+            <objects>
+                <viewController interfaceStyle="dark" id="Mid-XZ-j9m" customClass="DataViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uva-Sl-Wth">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFd-Gm-Q38">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" name="backgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="15"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" name="backgroundColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Data Type" id="G7j-mT-Peh"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Ck0-9g-1sa">
+                                <rect key="frame" x="40" y="184" width="334" height="489"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="j1N-zF-Ep2">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="74"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                        <size key="titleShadowOffset" width="3" height="0.0"/>
+                                        <state key="normal" title="Dribble Challenge #2">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="DC2OverhaulButtonPressed:" destination="Mid-XZ-j9m" eventType="touchUpInside" id="2xj-ic-obJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wTB-UK-P6f">
+                                        <rect key="frame" x="0.0" y="104" width="334" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                        <state key="normal" title="Leth's Rings">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="lethsRingsButtonPressed:" destination="Mid-XZ-j9m" eventType="touchUpInside" id="XKF-np-1Nu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9iD-Tm-Fsf">
+                                        <rect key="frame" x="0.0" y="207.5" width="334" height="74"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                        <state key="normal" title="Aim Training">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="aimTrainingButtonPressed:" destination="Mid-XZ-j9m" eventType="touchUpInside" id="04q-jT-YVc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUO-01-sv6">
+                                        <rect key="frame" x="0.0" y="311.5" width="334" height="73.5"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                        <state key="normal" title="Ranked">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ranked1v1ButtonPressed:" destination="Mid-XZ-j9m" eventType="touchUpInside" id="idt-e8-3Fd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdN-ko-rT0">
+                                        <rect key="frame" x="0.0" y="415" width="334" height="74"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                        <state key="normal" title="Stretch Training">
+                                            <color key="titleColor" name="spookWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ranked1v1ButtonPressed:" destination="Mid-XZ-j9m" eventType="touchUpInside" id="RtT-MO-jbq"/>
+                                            <segue destination="hcc-jo-i1j" kind="presentation" identifier="dataToNotes" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="1tb-Nd-4RV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="j1N-zF-Ep2" firstAttribute="leading" secondItem="Ck0-9g-1sa" secondAttribute="leading" id="3YO-ar-Bjw"/>
+                                    <constraint firstAttribute="trailing" secondItem="j1N-zF-Ep2" secondAttribute="trailing" id="I2E-q3-ONQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="UUO-01-sv6" secondAttribute="trailing" id="Rld-Ef-oFk"/>
+                                    <constraint firstAttribute="trailing" secondItem="9iD-Tm-Fsf" secondAttribute="trailing" id="Voz-Hz-9SF"/>
+                                    <constraint firstItem="9iD-Tm-Fsf" firstAttribute="leading" secondItem="Ck0-9g-1sa" secondAttribute="leading" id="a25-r3-KXa"/>
+                                    <constraint firstAttribute="trailing" secondItem="wTB-UK-P6f" secondAttribute="trailing" id="eqN-3p-rJl"/>
+                                    <constraint firstItem="ZdN-ko-rT0" firstAttribute="leading" secondItem="Ck0-9g-1sa" secondAttribute="leading" id="rN5-5P-kWc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZdN-ko-rT0" secondAttribute="trailing" id="u7q-XM-jaL"/>
+                                    <constraint firstItem="UUO-01-sv6" firstAttribute="leading" secondItem="Ck0-9g-1sa" secondAttribute="leading" id="xYF-lv-SAy"/>
+                                    <constraint firstItem="wTB-UK-P6f" firstAttribute="leading" secondItem="Ck0-9g-1sa" secondAttribute="leading" id="z6u-8e-cEU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jtw-eE-iSy"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SFd-Gm-Q38" firstAttribute="trailing" secondItem="Jtw-eE-iSy" secondAttribute="trailing" id="7BH-WD-6ig"/>
+                            <constraint firstItem="Ck0-9g-1sa" firstAttribute="top" secondItem="Jtw-eE-iSy" secondAttribute="top" constant="140" id="Kdu-C5-6bW"/>
+                            <constraint firstItem="SFd-Gm-Q38" firstAttribute="top" secondItem="Jtw-eE-iSy" secondAttribute="top" id="Mam-eT-aUv"/>
+                            <constraint firstItem="Jtw-eE-iSy" firstAttribute="bottom" secondItem="Ck0-9g-1sa" secondAttribute="bottom" constant="140" id="j5o-SH-mtB"/>
+                            <constraint firstItem="Ck0-9g-1sa" firstAttribute="leading" secondItem="Uva-Sl-Wth" secondAttribute="leading" constant="40" id="piA-HJ-HSc"/>
+                            <constraint firstItem="SFd-Gm-Q38" firstAttribute="leading" secondItem="Jtw-eE-iSy" secondAttribute="leading" id="pmr-i5-cCU"/>
+                            <constraint firstItem="Jtw-eE-iSy" firstAttribute="trailing" secondItem="Ck0-9g-1sa" secondAttribute="trailing" constant="40" id="sP3-Ls-RVK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Data" image="chart.bar" catalog="system" id="PMX-yx-gjl"/>
+                    <navigationItem key="navigationItem" id="5nF-jp-mbU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="DC2OverhaulButton" destination="j1N-zF-Ep2" id="i5Q-hD-605"/>
+                        <outlet property="aimTrainingButton" destination="9iD-Tm-Fsf" id="Q9q-EM-Kbd"/>
+                        <outlet property="lethsRingsButton" destination="wTB-UK-P6f" id="naA-NL-Sxs"/>
+                        <outlet property="rankedButton" destination="UUO-01-sv6" id="SaA-rd-4cg"/>
+                        <outlet property="recoveryButton" destination="ZdN-ko-rT0" id="A0L-lt-E4F"/>
+                        <segue destination="obJ-HF-GbZ" kind="presentation" identifier="dataToList" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="YmV-SR-FEf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saC-aN-LYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1811.594202898551" y="837.72321428571422"/>
+        </scene>
+        <!--Notes List View Controller-->
+        <scene sceneID="Qfd-Om-Meb">
+            <objects>
+                <viewController interfaceStyle="dark" id="hcc-jo-i1j" customClass="NotesListViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Wz-15-EWN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xra-yq-iQv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" name="spookWhite"/>
+                                <color key="barTintColor" name="backgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="14"/>
+                                    <color key="textColor" name="textColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Stretch Training Notes" id="9HB-wG-BGv">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="J7L-6N-RMw">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="hcc-jo-i1j" id="zA7-m7-fkn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="ieI-mR-MZP">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="plusButtonPressed:" destination="hcc-jo-i1j" id="3QP-QF-VHS"/>
+                                                <segue destination="iit-Bd-Bgt" kind="presentation" identifier="noteToEntry" id="xbX-Ch-1SN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vcv-4u-1uD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NoteCell" textLabel="dZD-YT-r2V" rowHeight="70" style="IBUITableViewCellStyleDefault" id="Vac-0S-6Nz" customClass="NoteCell" customModule="SpookLuke" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vac-0S-6Nz" id="ufy-83-4JF">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dZD-YT-r2V">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="backgroundColor"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <connections>
+                                            <outlet property="title" destination="dZD-YT-r2V" id="dPe-hz-wWX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s5e-dJ-NKz"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vcv-4u-1uD" firstAttribute="leading" secondItem="s5e-dJ-NKz" secondAttribute="leading" id="DuI-Th-nmU"/>
+                            <constraint firstAttribute="bottom" secondItem="vcv-4u-1uD" secondAttribute="bottom" id="IVg-rZ-Kga"/>
+                            <constraint firstItem="xra-yq-iQv" firstAttribute="trailing" secondItem="s5e-dJ-NKz" secondAttribute="trailing" id="Tj9-ft-np8"/>
+                            <constraint firstItem="xra-yq-iQv" firstAttribute="leading" secondItem="s5e-dJ-NKz" secondAttribute="leading" id="V8x-cl-uOL"/>
+                            <constraint firstItem="vcv-4u-1uD" firstAttribute="top" secondItem="xra-yq-iQv" secondAttribute="bottom" id="XUd-KP-i5V"/>
+                            <constraint firstItem="xra-yq-iQv" firstAttribute="top" secondItem="s5e-dJ-NKz" secondAttribute="top" id="XZP-ml-zbG"/>
+                            <constraint firstItem="vcv-4u-1uD" firstAttribute="trailing" secondItem="s5e-dJ-NKz" secondAttribute="trailing" id="su0-3G-eX6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notesTable" destination="vcv-4u-1uD" id="CTR-60-bBq"/>
+                        <segue destination="4AC-Lt-XNO" kind="presentation" identifier="noteToUpdate" id="gRE-Fn-iLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMQ-6W-BjG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="1582"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="OtP-9t-ZLU">
+            <objects>
+                <viewController interfaceStyle="dark" id="obJ-HF-GbZ" customClass="ListViewController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8um-21-a9k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-8F-PlP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="barTintColor" name="backgroundColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="LEMONMILK-Bold" family="LEMON MILK" pointSize="16"/>
+                                    <color key="textColor" name="textColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Title" id="BLd-Hi-AuN">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.backward" catalog="system" id="EsV-Py-v7L">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="obJ-HF-GbZ" id="Kf7-4N-ERU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="IQX-Ic-s7V">
+                                            <color key="tintColor" systemColor="linkColor"/>
+                                            <connections>
+                                                <action selector="addButtonPressed:" destination="obJ-HF-GbZ" id="OZT-5B-XVR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mNE-tl-bhq">
+                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" name="backgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="DataCell" rowHeight="70" id="cI0-lE-brF" customClass="DataCell" customModule="SpookLuke" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cI0-lE-brF" id="fcJ-B2-aFG">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DkU-fW-vfO">
+                                                    <rect key="frame" x="30" y="10" width="324.5" height="50"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8R8-LY-eCp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="324.5" height="25.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Levels Completed: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9E-x3-fze">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="187" height="25.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="146" id="b2Y-bz-tyV"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                                    <color key="textColor" name="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time (Minutes): 10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZP-gp-GTU">
+                                                                    <rect key="frame" x="191" y="0.0" width="133.5" height="25.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                                    <color key="textColor" name="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4Tb-lg-5al">
+                                                            <rect key="frame" x="0.0" y="29.5" width="324.5" height="20.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deaths: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zY-6h-fTF">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="260.5" height="20.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="20.5" id="lpt-bE-xjG"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                                    <color key="textColor" name="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqy-rr-27r">
+                                                                    <rect key="frame" x="264.5" y="0.0" width="60" height="20.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="60" id="keR-b1-zgc"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                    <color key="textColor" systemColor="systemGrayColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="backgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="DkU-fW-vfO" firstAttribute="top" secondItem="fcJ-B2-aFG" secondAttribute="top" constant="10" id="GYi-Tu-GHB"/>
+                                                <constraint firstItem="DkU-fW-vfO" firstAttribute="leading" secondItem="fcJ-B2-aFG" secondAttribute="leading" constant="30" id="Odb-Jb-Km6"/>
+                                                <constraint firstAttribute="bottom" secondItem="DkU-fW-vfO" secondAttribute="bottom" constant="10" id="knQ-77-ena"/>
+                                                <constraint firstAttribute="trailing" secondItem="DkU-fW-vfO" secondAttribute="trailing" constant="30" id="sqM-wS-ft6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <connections>
+                                            <outlet property="cellNumberLabel" destination="rqy-rr-27r" id="RIg-Q6-NpV"/>
+                                            <outlet property="entryOneLabel" destination="Z9E-x3-fze" id="oHK-Np-AIe"/>
+                                            <outlet property="entryThreeLabel" destination="jZP-gp-GTU" id="FwG-qg-Ppg"/>
+                                            <outlet property="entryTwoLabel" destination="8zY-6h-fTF" id="AIk-9m-XTM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F4m-c4-IqD">
+                                <rect key="frame" x="50" y="98" width="314" height="32"/>
+                                <segments>
+                                    <segment title="Data"/>
+                                    <segment title="Graph"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didChangeSegment:" destination="obJ-HF-GbZ" eventType="valueChanged" id="O74-ux-mop"/>
+                                </connections>
+                            </segmentedControl>
+                            <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUg-Ld-nJf" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="30" y="178" width="354" height="604"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mI-q4-4t0">
+                                <rect key="frame" x="20" y="792" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fup-db-gxL"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NUg-Ld-nJf" firstAttribute="top" secondItem="7dd-8F-PlP" secondAttribute="bottom" constant="90" id="3gj-e3-acX"/>
+                            <constraint firstItem="mNE-tl-bhq" firstAttribute="leading" secondItem="fup-db-gxL" secondAttribute="leading" id="5na-9m-VQ4"/>
+                            <constraint firstItem="7dd-8F-PlP" firstAttribute="trailing" secondItem="fup-db-gxL" secondAttribute="trailing" id="CcM-dW-6ft"/>
+                            <constraint firstItem="7dd-8F-PlP" firstAttribute="top" secondItem="fup-db-gxL" secondAttribute="top" id="GG5-B1-YNB"/>
+                            <constraint firstAttribute="bottom" secondItem="mNE-tl-bhq" secondAttribute="bottom" id="OoF-C9-QvR"/>
+                            <constraint firstItem="F4m-c4-IqD" firstAttribute="top" secondItem="7dd-8F-PlP" secondAttribute="bottom" constant="10" id="Oza-XJ-r0w"/>
+                            <constraint firstItem="0mI-q4-4t0" firstAttribute="leading" secondItem="fup-db-gxL" secondAttribute="leading" constant="20" id="Rca-mV-EHf"/>
+                            <constraint firstItem="mNE-tl-bhq" firstAttribute="top" secondItem="F4m-c4-IqD" secondAttribute="bottom" constant="10" id="VV0-rZ-qG8"/>
+                            <constraint firstItem="fup-db-gxL" firstAttribute="trailing" secondItem="0mI-q4-4t0" secondAttribute="trailing" constant="20" id="VpJ-5e-ZYz"/>
+                            <constraint firstItem="F4m-c4-IqD" firstAttribute="leading" secondItem="fup-db-gxL" secondAttribute="leading" constant="50" id="W9A-x5-rRu"/>
+                            <constraint firstItem="mNE-tl-bhq" firstAttribute="trailing" secondItem="fup-db-gxL" secondAttribute="trailing" id="Wu4-Cz-Ty5"/>
+                            <constraint firstItem="7dd-8F-PlP" firstAttribute="leading" secondItem="fup-db-gxL" secondAttribute="leading" id="gAl-Ii-pMC"/>
+                            <constraint firstItem="fup-db-gxL" firstAttribute="trailing" secondItem="F4m-c4-IqD" secondAttribute="trailing" constant="50" id="gdF-hW-NJA"/>
+                            <constraint firstItem="0mI-q4-4t0" firstAttribute="top" secondItem="NUg-Ld-nJf" secondAttribute="bottom" constant="10" id="k13-MS-MoE"/>
+                            <constraint firstItem="fup-db-gxL" firstAttribute="bottom" secondItem="NUg-Ld-nJf" secondAttribute="bottom" constant="80" id="qkM-W2-7M0"/>
+                            <constraint firstItem="NUg-Ld-nJf" firstAttribute="leading" secondItem="fup-db-gxL" secondAttribute="leading" constant="30" id="sGG-Cz-KuT"/>
+                            <constraint firstItem="fup-db-gxL" firstAttribute="trailing" secondItem="NUg-Ld-nJf" secondAttribute="trailing" constant="30" id="vRV-Ps-DoA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="IQX-Ic-s7V" id="EeH-bj-yyW"/>
+                        <outlet property="backButton" destination="EsV-Py-v7L" id="LqU-LA-fP7"/>
+                        <outlet property="dataTableView" destination="mNE-tl-bhq" id="L11-5t-laI"/>
+                        <outlet property="entriesLabel" destination="0mI-q4-4t0" id="VOZ-Ig-45j"/>
+                        <outlet property="graphView" destination="NUg-Ld-nJf" id="5gW-me-tfv"/>
+                        <outlet property="navigationBar" destination="7dd-8F-PlP" id="Z1c-R4-I6B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwF-J3-lW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2724.6376811594205" y="837.72321428571422"/>
+        </scene>
+        <!--My Tab Controller-->
+        <scene sceneID="bhF-BW-OuN">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeVCTab" interfaceStyle="dark" id="ma6-ne-GV6" customClass="MyTabController" customModule="SpookLuke" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9T0-dQ-KuZ"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ytO-gy-rUc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PIN-pk-gGl" kind="relationship" relationship="viewControllers" id="hFR-G0-vuu"/>
+                        <segue destination="Mid-XZ-j9m" kind="relationship" relationship="viewControllers" id="yGr-P0-EyE"/>
+                        <segue destination="uJI-0A-Kn9" kind="relationship" relationship="viewControllers" id="qXh-VU-HNd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVc-X2-7eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="logo" width="1000" height="1000"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="backgroundColor">
+            <color red="0.99800002574920654" green="1" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="nameBackgroundColor">
+            <color red="0.94700002670288086" green="0.81699997186660767" blue="0.50599998235702515" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="phase1">
+            <color red="0.34509803921568627" green="0.78431372549019607" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="spookBlack">
+            <color red="0.059000000357627869" green="0.070000000298023224" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="spookRoyalBlue">
+            <color red="0.20800000429153442" green="0.47299998998641968" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="spookWhite">
+            <color red="0.92199999094009399" green="0.92199999094009399" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.059000000357627869" green="0.070000000298023224" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textFieldColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
